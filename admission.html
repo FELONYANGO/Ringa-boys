@@ -28,7 +28,9 @@
                 
             }
            .row2{
-                text-align: center
+                text-align: left;
+                font-weight:bolder ;
+                font-size: 23px;
            } 
              
           
@@ -62,6 +64,36 @@
     margin-right: 20%;
     height: 70px;
   }
+  .col-sm-4{
+    background-color: #B3e5fc;
+    text-align: left;
+  }
+  .col-sm-8{
+    background-color: #81D4FA;
+  }
+  #counter{
+          color:black;
+          font-size: 28px;
+          font-weight:bolder ;
+        }
+        #count2{
+          color:black;
+          font-size: 28px;
+          font-weight:bolder ;
+        }
+        .column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+   /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
   </style>
 </head>
 <body>
@@ -155,45 +187,65 @@
              <img src="image/Ringa gate.jpeg" alt="Person"class="center" width="100%" height=200px>
         </div>
     </div> 
-        <p>Some text..</p>
-        <p style="color:blue;font-size: 23px;">Our Lady of Mercy
-           Ringa Boys Secondary School is located within Homa 
-           Bay county and is a boys boarding secondary school
-            within the nyanza Region of Kenya.
+  
+  <div class="row"style="margin-top:3%;">
+    <div class="column" style="background-color:#0077b6;">
+      <h3 style="margin-top: 3%;">Students</h3>
+      <p>COUNTS DECREMENT</p>
+      <div id="counter">
+        <!-- counts -->
+      </div>
+    </div>
+    
+      <script>
+        let counts=setInterval(updated);
+        let upto=0;
+        function updated(){
+          var count= document.getElementById("counter");
+          count.innerHTML=++upto;
+          if(upto === 1700) {
+            clearInterval(counts);
+          }
+        }
+      </script>
+  <div class="column" style="background-color:#00b4d8;">
 
-          In this write up I will delve
-          deeply into the school’s KCSE Results,
-          KNEC Code, contacts, Admissions, physical 
-          location, directions, history, Form one selection
-            criteria, School Fees and Uniforms. Also find a
-            beautiful collation of images from the school’s 
-            scenery; including structures, signage, students,
-            teachers and many more.</p>
+  <h3 style="margin-top: 3%;">subject</h3>
+  <p>COUNTS DECREMENT</p>
+  <div id="count2">
+    <!--counts2-->
+  </div>
+  </div>
+      <script>
+        let countss=setInterval(updated);
+        let uptoo=0;
+        function updated(){
+          var count2= document.getElementById("count2");
+          count2.innerHTML=++upto;
+          if(upto === 16) {
+            clearInterval(countss);
+          }
+        }
+      </script>
+   
+  </div>
     
       </div>
 
-    <div class="col-sm-4">
+      <div class="col-sm-4">
         <div  class="row2">
-      <h2 style="text-align: center;color: rgb(4, 7, 32);">PRINCIPAL REMARKS</h2>
-      <h5>MR.AUSTINE MUMA</h5>
-      <div class="fakeimg"> 
-        <img src="image/Ringa gate.jpeg" class="rounded-circle" alt="Cinque Terre" width="304" height="200" style> 
-      </div>
-    </div>
-
-   <p style="color:blue;font-size: 23px;"> I am certainly delighted to be in Nairobi School.
-    Thank you so much for your warm reception.
-    It is definitely exciting working with young boys and helping them realize their potential. Young 
-    people have a deep well of incredible potential.
-    Teaching is therefore a relational occupation. 
-    We establish relations with these young boys as 
-    they go  through life .Let us not be asleep in
-    a time of great revolution. Let us stay awake and 
-    make a difference in life. Let us aspire to be great.
-    Let us identify our uttermost purpose.Finally remember
-    that hope is essential in life so let us maintain
-    and develop our hopes for what matters most in
-    life is not how we begin but rather how we finish.</P>
+          <div class ="below_arousel">
+            <iframe src="https://calendar.google.com/calendar/embed?height=300&wkst=1&bgcolor=%23ffffff&ctz=UTC&src=ZmVsaXhvbnlhbmdvOTUxQGdtYWlsLmNvbQ&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4ua2UjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%2333B679&color=%230B8043" 
+            style="border:solid 1px #777" width="400" height="300"
+             frameborder="0" scrolling="no"></iframe>      
+     
+             <h5>System stakeholders</h5>
+             <ul>
+              <li>one</li>
+              <li>two</li>
+              <li>three</li>
+            </ul>  
+       
          
        
       <hr class="d-sm-none">
